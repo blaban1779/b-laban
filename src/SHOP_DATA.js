@@ -20,9 +20,9 @@ export const SHOP_DATA = [
     items: [
       {
         id: 1,
-        name: "נרגילה רוסית",
+        name: " قشطوطه نوتيلا ",
         imageUrl: shisha1,
-        price: 70,
+        price: 35,
         price2: null,
         disprice: 0,
       },
