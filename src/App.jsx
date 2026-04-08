@@ -37,7 +37,7 @@ const App = () => {
   const location = useLocation();
   const dispatch = useDispatch();
 
-  const [locale, setLocale] = useState("heb");
+  const [locale, setLocale] = useState("ar");
 
   const switchLanguage = useCallback((language) => {
     setLocale(language);

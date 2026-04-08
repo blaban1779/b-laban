@@ -78,7 +78,7 @@ const Navigation = ({ switchLanguage }) => {
               {openLanguage && (
                 <div
                   ref={ref}
-                  className={`language-dropdown-container ${
+                  className={` ${
                     animate ? "show" : ""
                   }`}
                 >

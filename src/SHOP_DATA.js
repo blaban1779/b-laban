@@ -30,7 +30,7 @@ export const SHOP_DATA = [
   },
 
 
-
+/*
   {
     title: "makeups",
     items: [
@@ -47,7 +47,7 @@ export const SHOP_DATA = [
     ],
   },
 
-
+*/
 
   {
     title: "haircare",
