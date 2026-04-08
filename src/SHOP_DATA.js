@@ -30,13 +30,13 @@ export const SHOP_DATA = [
   },
 
 
-/*
+
   {
     title: "makeups",
     items: [
       {
         id: 300,
-        name: "קריפ",
+        name: "قشطوطه",
         imageUrl: sweets1,
         des: "",
         price: 40,
@@ -47,14 +47,14 @@ export const SHOP_DATA = [
     ],
   },
 
-*/
+
 
   {
     title: "haircare",
     items: [
       {
         id: 1000,
-        name: "קוקה קולה",
+        name: " قشطوطه",
         imageUrl: drink1,
         price: 15,
         disprice: 0,
@@ -66,11 +66,11 @@ export const SHOP_DATA = [
 
 
   {
-    title: "body-lotions",
+    title: "",
     items: [
       {
         id: 800,
-        name: "ברגר",
+        name: "قشطوطه",
         imageUrl: food1,
         price: 80,
         disprice: 0,
