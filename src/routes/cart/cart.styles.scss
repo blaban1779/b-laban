@@ -1,0 +1,229 @@
+.cart-container.container {
+  max-width: 800px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: start;
+  flex-direction: column;
+  position: relative;
+
+  .location-select-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .location-select {
+    width: 100%;
+    padding: 10px;
+   
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s;
+  }
+  
+  .location-select:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  .selected-location {
+    font-size: 18px;
+    color: #333;
+  }
+
+
+  &.empty-container {
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  h1 {
+    margin: 0;
+  }
+
+  .info-container{
+    background-color: white;
+    width: 100%;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin-bottom: 100px;
+
+    .location-selector {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      width: 90%;
+      background-color: #f9f9f9;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    
+    .location-selector h3 {
+      margin-bottom: 20px;
+      font-size: 1.2em;
+      display: flex;
+    }
+    
+    .radio-group {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: start;
+      width: 100%;
+      margin: 5px 0;
+    }
+    
+    .radio-group label {
+      font-size: 1em;
+    }
+    
+    .location-selector input[type="radio"] {
+      margin-right: 10px;
+    }
+    
+    .location-selector p {
+      margin-top: 20px;
+      font-size: 1em;
+      color: #333;
+    }
+    
+  }
+  .total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
+    font-size: 36px;
+    z-index: 1;
+
+    @media only screen and (max-width: 1140px ) {
+      position: fixed;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #ffffff77;
+      backdrop-filter: blur(5px);
+      box-shadow: -2px -2px 5px #0000002f;
+      width: 100%;
+      max-width: 800px;
+      margin: auto;
+      padding: 5px 20px;
+      text-align: right;
+    }
+
+    @media only screen and (min-width: 1140px ) {
+      position: sticky;
+      top: 10px;
+      bottom: auto;
+    }
+
+    span {
+      font-size: 26px;
+    }
+  }
+
+  .cart-header {
+    width: 100%;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid darkgrey;
+    margin-top: 30px;
+
+    .header-block {
+      text-transform: capitalize;
+      width: 23%;
+
+      &:last-child {
+        width: 24px;
+        margin-left: 15px;
+      }
+    }
+  }
+}
+
+.cart-item-container {
+  width: 100%;
+  display: flex;
+  min-height: 100px;
+  border-bottom: 1px solid darkgrey;
+  padding: 15px 0;
+  font-size: 20px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5px;
+
+  .image-container {
+    flex:1;
+
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: 8px;
+    }
+  }
+  .name,
+  .quantity
+   {
+    flex:1;
+  }
+
+  .price{
+    
+  }
+  .name {
+    flex:2;
+    font-size: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  button {
+    all: unset;
+    cursor: pointer;
+    user-select: none;
+  }
+
+  .quantity {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex:1;
+
+    button {
+      width: 24px;
+      height: 15px;
+      border: 1px solid #000;
+      font-size: 30px;
+      line-height: 0;
+      display: flex;
+      align-items: baseline;
+      justify-content: center;
+      padding: 5px;
+      border-radius: 4px;
+    }
+
+    .value {
+      text-align: center;
+      padding: 5px;
+    }
+  }
+
+  .remove-button {
+    width: 24px;
+  }
+}
+

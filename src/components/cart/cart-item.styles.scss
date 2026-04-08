@@ -1,0 +1,43 @@
+.minicart-item {
+  width: 100%;
+  display: flex;
+  margin-bottom: 10px;
+  flex: none;
+  border-bottom:1px solid black;
+  // border-radius: 10px;
+  padding: 10px;
+
+  img {
+    width: 30%;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+
+  .item-details {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 10px;
+
+
+    .name {
+      font-size: 15px;
+      margin: 0;
+      font-weight: 500;
+      color:black;
+      width: 100%;
+      text-overflow: ellipsis;
+    }
+
+    .info {
+      font-size: 18px;
+      margin-top: auto;
+    }
+
+    .price {
+      font-size: 20px;
+      font-weight: 400;
+    }
+  }
+}
