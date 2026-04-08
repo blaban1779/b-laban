@@ -68,30 +68,7 @@ const Navigation = ({ switchLanguage }) => {
               style={{ width: "42px", height: "42px", cursor: "pointer" }}
               alt="icon"
             />
-            <div className="language-container">
-              <img
-                src={language}
-                alt=""
-                className=""
-                onClick={toggleLanguage}
-              />
-              {openLanguage && (
-                <div
-                  ref={ref}
-                  className={` ${
-                    animate ? "show" : ""
-                  }`}
-                >
-                  <div className="item" onClick={() => changeLanguage("ar")}>
-                    عربي
-                  </div>
-                  <div className="divider" />
-                  <div className="item" onClick={() => changeLanguage("heb")}>
-                    עברית
-                  </div>
-                </div>
-              )}
-            </div>
+           
 
             <CartIcon />
             <Minicart />
